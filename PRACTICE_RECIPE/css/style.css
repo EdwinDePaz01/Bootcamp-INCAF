@@ -1,0 +1,275 @@
+body {
+  background-color: rosybrown;
+}
+
+main {
+  margin-left: 16rem;
+  margin-right: 16rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+figure {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  text-align: center;
+  margin: 0;
+}
+
+figure img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 3em;
+  font-style: italic;
+}
+
+.primeraSection,
+.terceraSection,
+.cuartaSection,
+.quintaSection {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.segundaSection {
+  margin-right: 4rem;
+  margin-left: 4rem;
+  background-color: rgba(255, 8, 0, 0.432);
+  padding: 5px 5px 5px 15px;
+  border-radius: 15px;
+}
+
+h2,
+h3 {
+  color: rgb(109, 3, 3);
+  font-style: italic;
+}
+
+li::marker {
+  color: rgb(109, 3, 3);
+}
+
+hr {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  border: 0;
+  background-color: rosybrown;
+  height: 1px;
+}
+
+td {
+  padding-left: 3rem;
+  padding-right: 13rem;
+  padding-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; 
+
+tr:not(:last-child) {
+  border-bottom: 1px solid rosybrown; 
+}
+
+tr td:last-child {
+  color: rgb(109, 3, 3);
+}
+
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 1200px) {
+  main {
+    margin: 0;
+  }
+
+  figure {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  td {
+    padding-left: 2rem;
+    padding-right: 8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  td {
+    padding-left: 1rem;
+    padding-right: 6rem;
+  }
+
+  /* Ajuste en los márgenes de las secciones */
+  .primeraSection,
+  .terceraSection,
+  .cuartaSection,
+  .quintaSection {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .segundaSection {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  figure {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0; /* Elimina el padding superior para que la imagen ocupe toda la parte superior */
+  }
+
+  figure img {
+    width: 100%; /* La imagen ocupará el 100% del ancho */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+
+  main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  td {
+    padding-left: 2rem;
+    padding-right: 8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  figure {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  figure img {
+    width: 100%; /* La imagen ocupará el 100% del ancho */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+
+  main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  td {
+    padding-left: 1rem;
+    padding-right: 6rem;
+  }
+
+  .primeraSection,
+  .terceraSection,
+  .cuartaSection,
+  .quintaSection {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .segundaSection {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  hr{
+    margin-left: 2rem;
+  margin-right: 2rem;
+  }
+
+  figure {
+    margin: 0;
+    padding: 0;
+    margin-left: -16px;  /* Ajusta según el padding/margen del main */
+    margin-right: -16px; /* Esto expande el figure fuera del main */
+    width: calc(100% + 32px); /* Compensa los márgenes negativos */
+  }
+
+  figure img {
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2em;
+  }
+
+  h2,
+  h3 {
+    font-size: 1em;
+  }
+
+  td {
+    padding-left: 0.5rem;
+    padding-right: 2rem;
+  }
+
+  .primeraSection,
+  .terceraSection,
+  .cuartaSection,
+  .quintaSection {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .segundaSection {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  figure {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  figure img {
+    width: 100%; /* La imagen ocupará el 100% del ancho */
+    height: 100%; /* La imagen ocupará el 100% de la altura disponible */
+    object-fit: cover; /* Asegura que la imagen cubra toda el área sin distorsionar */
+  }
+}
